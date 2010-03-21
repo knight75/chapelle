@@ -1,0 +1,42 @@
+/*
+page des styles principaux utilises par le site
+main stylesheet for the site
+*/
+
+
+/* 
+style de base de la page
+basic sttyle for page
+*/
+#page {
+  background-color: white;
+  color: blue;
+  font-family: tahoma,verdana,sans-serif;
+}
+/*
+style de header (en-tete)
+header style
+*/
+
+#header {
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+/*
+style du bas de page
+footer style
+*/
+#footer {
+  background-color: green;
+  color: yellow;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 0px;
+  margin-bottom: -0px;
+  margin-left: 0px;
+}

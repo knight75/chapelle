@@ -1,0 +1,26 @@
+<%= link_to 'Ajouter une personne', new_kitaitoi_path %>
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Telephone</th>
+    <th>Email</th>
+    <th>Fonction</th>
+  </tr>
+
+<% for kitaitoi in @kitaitois %>
+  <tr>
+    <td><%=h kitaitoi.nom %></td>
+    <td><%=h kitaitoi.prenom %></td>
+    <td><%=h kitaitoi.telephone %></td>
+    <td><%=mail_to kitaitoi.email %></td>
+    <td><%=h kitaitoi.fonction %></td>
+    <td><%= link_to 'Voir', kitaitoi %></td>
+    <td><%= link_to 'Modifier', edit_kitaitoi_path(kitaitoi) %></td>
+    <td><%= link_to 'Supprimer', kitaitoi, :confirm => 'Etes-vous sûr?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

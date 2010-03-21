@@ -1,0 +1,28 @@
+<p>
+  <b>Nom:</b>
+  <%=h @kitaitoi.nom %>
+</p>
+
+<p>
+  <b>Prenom:</b>
+  <%=h @kitaitoi.prenom %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%=h @kitaitoi.telephone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @kitaitoi.email %>
+</p>
+
+<p>
+  <b>Fonction:</b>
+  <%=h @kitaitoi.fonction %>
+</p>
+
+
+<%= link_to 'Editer', edit_kitaitoi_path(@kitaitoi) %> |
+<%= link_to 'Retour', kitaitois_path %>

@@ -1,0 +1,12 @@
+#base postgres
+development:
+  adapter: postgresql
+  host: localhost
+  database: lachapelle
+  username: yourusername
+  password: yourpassword
+  encoding: utf8
+
+
+production:
+  development

@@ -1,0 +1,32 @@
+<h1>Modification Fiche</h1>
+
+<% form_for(@kitaitoi) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </p>
+  <p>
+    <%= f.label :prenom %><br />
+    <%= f.text_field :prenom %>
+  </p>
+  <p>
+    <%= f.label :telephone %><br />
+    <%= f.text_field :telephone %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :fonction %><br />
+    <%= f.text_field :fonction %>
+  </p>
+  <p>
+    <%= f.submit "Mettre à jour" %>
+  </p>
+<% end %>
+
+<%= link_to 'Voir', @kitaitoi %> |
+<%= link_to 'Retour', kitaitois_path %>
