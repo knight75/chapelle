@@ -2,8 +2,9 @@ class KitaitoisController < ApplicationController
   # GET /kitaitois
   # GET /kitaitois.xml
   def index
-    @kitaitois = Kitaitoi.find(:all, :order => 'NOM')
-    
+   @kitaitois = kitaitoi.paginate :all, :page => params[:page], :order => 'Nom'
+
+ 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @kitaitois }
